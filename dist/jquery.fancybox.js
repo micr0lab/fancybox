@@ -128,7 +128,7 @@
         spinnerTpl : '<div class="fancybox-loading"></div>',
 
         // Error message template
-        errorTpl : '<div class="fancybox-error"><h2>Hm… ressource introuvable, désolé!</h2><img style="align:center; margin : auto" src="https://micr0lab.org/images/internet/404.jpg" title="Erreur!" alt="Zaaaaaaaaaaap"/><p>Le webmestre de micr0lab serait enchanté d’avoir un courriel à ce propos :<br/>webmestre@micr0lab.org</p></div>',
+        errorTpl : '<div class="fancybox-error"><h2>Hm… ressource introuvable, désolé!</h2><p>Le webmestre de micr0lab serait enchanté d’avoir un courriel à ce propos :<br/>webmestre@micr0lab.org</p></div>',
 
         // This will be appended to html content, if "smallBtn" option is not set to false
         closeTpl : '<button data-fancybox-close class="fancybox-close-small"></button>',
