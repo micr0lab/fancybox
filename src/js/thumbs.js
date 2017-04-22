@@ -25,7 +25,7 @@
 		init : function() {
 			var self = this;
 
-			self.$button = $('<button data-fancybox-thumbs class="fancybox-button fancybox-button--thumbs" title="Thumbnails (G)"></button>')
+			self.$button = $('<button data-fancybox-thumbs class="fancybox-button fancybox-button--thumbs" title="Mozaïque (G)"></button>')
 				.appendTo( this.instance.$refs.buttons )
 				.on('touchend click', function(e) {
 					e.stopPropagation();

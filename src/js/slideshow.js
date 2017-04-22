@@ -27,7 +27,7 @@
 		init : function() {
 			var self = this;
 
-			self.$button = $('<button data-fancybox-play class="fancybox-button fancybox-button--play" title="Slideshow (P)"></button>')
+			self.$button = $('<button data-fancybox-play class="fancybox-button fancybox-button--play" title="Diaporama"></button>')
 				.appendTo( self.instance.$refs.buttons );
 
 			self.instance.$refs.container.on('click', '[data-fancybox-play]', function() {

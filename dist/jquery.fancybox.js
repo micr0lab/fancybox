@@ -1,5 +1,5 @@
 // ==================================================
-// fancyBox v3.0.47
+// fancyBox v3.0.48
 //
 // Licensed GPLv3 for open source use
 // or fancyBox Commercial License for commercial use
@@ -108,14 +108,14 @@
                 '<div class="fancybox-bg"></div>' +
                 '<div class="fancybox-controls">' +
                     '<div class="fancybox-infobar">' +
-                        '<button data-fancybox-previous class="fancybox-button fancybox-button--left" title="Previous"></button>' +
+                        '<button data-fancybox-previous class="fancybox-button fancybox-button--left" title="Précédent"></button>' +
                         '<div class="fancybox-infobar__body">' +
                             '<span class="js-fancybox-index"></span>&nbsp;/&nbsp;<span class="js-fancybox-count"></span>' +
                         '</div>' +
-                        '<button data-fancybox-next class="fancybox-button fancybox-button--right" title="Next"></button>' +
+                        '<button data-fancybox-next class="fancybox-button fancybox-button--right" title="Suivant"></button>' +
                     '</div>' +
                     '<div class="fancybox-buttons">' +
-                        '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Close (Esc)"></button>' +
+                        '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Fermer (Échap)"></button>' +
                     '</div>' +
                 '</div>' +
                 '<div class="fancybox-slider-wrap">' +
@@ -128,7 +128,7 @@
         spinnerTpl : '<div class="fancybox-loading"></div>',
 
         // Error message template
-        errorTpl : '<div class="fancybox-error"><p>The requested content cannot be loaded. <br /> Please try again later.<p></div>',
+        errorTpl : '<div class="fancybox-error"><h2>Hm… ressource introuvable, désolé!</h2><img style="align:center; margin : auto" src="https://micr0lab.org/images/internet/404.jpg" title="Erreur!" alt="Zaaaaaaaaaaap"/><p>Le webmestre de micr0lab serait enchanté d’avoir un courriel à ce propos :<br/>webmestre@micr0lab.org</p></div>',
 
         // This will be appended to html content, if "smallBtn" option is not set to false
         closeTpl : '<button data-fancybox-close class="fancybox-close-small"></button>',
@@ -2280,7 +2280,7 @@
 
     $.fancybox = {
 
-        version  : "3.0.47",
+        version  : "3.0.48",
         defaults : defaults,
 
 
@@ -3661,7 +3661,7 @@
 		init : function() {
 			var self = this;
 
-			self.$button = $('<button data-fancybox-play class="fancybox-button fancybox-button--play" title="Slideshow (P)"></button>')
+			self.$button = $('<button data-fancybox-play class="fancybox-button fancybox-button--play" title="Diaporama"></button>')
 				.appendTo( self.instance.$refs.buttons );
 
 			self.instance.$refs.container.on('click', '[data-fancybox-play]', function() {
@@ -3881,7 +3881,7 @@
 			if ( instance && !!instance.opts.fullScreen && !instance.FullScreen) {
 				$container = instance.$refs.container;
 
-				instance.$refs.button_fs = $('<button data-fancybox-fullscreen class="fancybox-button fancybox-button--fullscreen" title="Full screen (F)"></button>')
+				instance.$refs.button_fs = $('<button data-fancybox-fullscreen class="fancybox-button fancybox-button--fullscreen" title="Plein écran (F)"></button>')
 					.appendTo( instance.$refs.buttons );
 
 				$container.on('click.fb-fullscreen', '[data-fancybox-fullscreen]', function(e) {
@@ -3955,7 +3955,7 @@
 		init : function() {
 			var self = this;
 
-			self.$button = $('<button data-fancybox-thumbs class="fancybox-button fancybox-button--thumbs" title="Thumbnails (G)"></button>')
+			self.$button = $('<button data-fancybox-thumbs class="fancybox-button fancybox-button--thumbs" title="Mozaïque (G)"></button>')
 				.appendTo( this.instance.$refs.buttons )
 				.on('touchend click', function(e) {
 					e.stopPropagation();

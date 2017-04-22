@@ -98,14 +98,14 @@
                 '<div class="fancybox-bg"></div>' +
                 '<div class="fancybox-controls">' +
                     '<div class="fancybox-infobar">' +
-                        '<button data-fancybox-previous class="fancybox-button fancybox-button--left" title="Previous"></button>' +
+                        '<button data-fancybox-previous class="fancybox-button fancybox-button--left" title="Précédent"></button>' +
                         '<div class="fancybox-infobar__body">' +
                             '<span class="js-fancybox-index"></span>&nbsp;/&nbsp;<span class="js-fancybox-count"></span>' +
                         '</div>' +
-                        '<button data-fancybox-next class="fancybox-button fancybox-button--right" title="Next"></button>' +
+                        '<button data-fancybox-next class="fancybox-button fancybox-button--right" title="Suivant"></button>' +
                     '</div>' +
                     '<div class="fancybox-buttons">' +
-                        '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Close (Esc)"></button>' +
+                        '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="Fermer (Échap)"></button>' +
                     '</div>' +
                 '</div>' +
                 '<div class="fancybox-slider-wrap">' +
@@ -118,7 +118,7 @@
         spinnerTpl : '<div class="fancybox-loading"></div>',
 
         // Error message template
-        errorTpl : '<div class="fancybox-error"><p>The requested content cannot be loaded. <br /> Please try again later.<p></div>',
+        errorTpl : '<div class="fancybox-error"><h2>Hm… ressource introuvable, désolé!</h2><p>Le webmestre de micr0lab serait enchanté d’avoir un courriel à ce propos :<br/>webmestre@micr0lab.org</p></div>',
 
         // This will be appended to html content, if "smallBtn" option is not set to false
         closeTpl : '<button data-fancybox-close class="fancybox-close-small"></button>',

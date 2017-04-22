@@ -115,7 +115,7 @@
 			if ( instance && !!instance.opts.fullScreen && !instance.FullScreen) {
 				$container = instance.$refs.container;
 
-				instance.$refs.button_fs = $('<button data-fancybox-fullscreen class="fancybox-button fancybox-button--fullscreen" title="Full screen (F)"></button>')
+				instance.$refs.button_fs = $('<button data-fancybox-fullscreen class="fancybox-button fancybox-button--fullscreen" title="Plein écran (F)"></button>')
 					.appendTo( instance.$refs.buttons );
 
 				$container.on('click.fb-fullscreen', '[data-fancybox-fullscreen]', function(e) {
